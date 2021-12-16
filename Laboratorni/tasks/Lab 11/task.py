@@ -12,13 +12,9 @@
 '''
 
 class TRectangle:
-    def __init__(self, a=1, b=1):
-        if a >= 1:
-            self.a = a
-        elif b >= 1:
-            self.b = b
-        else:
-            raise Exception('Can\'t be less than 1')
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
     def input(self):
         self.a = int(input('I сторона = '))
         self.b = int(input('II сторона = '))
